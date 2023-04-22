@@ -47,6 +47,8 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				num++;
 			}
+			else
+				break;
 		}
 		else
 		{
