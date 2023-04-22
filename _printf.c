@@ -10,7 +10,9 @@ int _printf(const char *format, ...)
 {
 	int i, num = 0;
 	va_list args;
-
+	
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
@@ -29,7 +31,7 @@ int _printf(const char *format, ...)
 				char *s = va_arg(args, char *);
 
 				if (s == NULL)
-					return (-1);
+					s = "(null);
 				while (*s)
 				{
 					_putchar(*s++);
