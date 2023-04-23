@@ -20,25 +20,18 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[i] == 'c')
-			{
 				num += _printf_char(args);
-			}
 			else if (format[i] == 's')
-			{
 				num += _printf_string(args);
-			}
 			else if (format[i] == 'd' || format[i] == 'i')
-			{
 				num += _printf_number(args);
-			}
 			else if (format[i] == '%')
-			{
 				num += _putchar('%');
-			}
 			else
 			{
 				_putchar('%');
-				num++;
+				_putchar(format[i]);
+				num += 2;
 			}
 		}
 		else
