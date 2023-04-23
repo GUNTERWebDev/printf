@@ -4,21 +4,25 @@
  * @n: number to be printed
  * Return: void
  */
-int _print_number(int n)
+int _print_number(va_list args)
 {
-	int num = 0;
+	int n = va_arg(args, int);
+	int len = 0, div = 1;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
-		num++;
+		len++;
 	}
+	while (n / div > 9)
+		div *= 10;
 
-	if (n / 10)
-		num += _print_number(n / 10);
-
-	_putchar((n % 10) + '0');
-	num++;
-	return (num);
+	while (div != 0)
+	{
+		_putchar((n / div) % 10 + '0');
+		div /= 10;
+		len++;
+	}
+	return (len);
 }

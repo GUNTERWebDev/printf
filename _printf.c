@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == 's')
 				num += _printf_string(args);
 			else if (format[i] == 'd' || format[i] == 'i')
-				num += _printf_number(args);
+				num += _print_number(args);
 			else if (format[i] == '%')
 				num += _putchar('%');
 			else
