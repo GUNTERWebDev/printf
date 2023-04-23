@@ -17,7 +17,7 @@ int _print_number(va_list args)
 		n = -n;
 		len++;
 	}
-	if (n > 0)
+	if (n >= 0)
 	{
 		while (n / div > 9)
 			div *= 10;
@@ -29,7 +29,5 @@ int _print_number(va_list args)
 			len++;
 		}
 	}
-	if (n == 0)
-		_putchar('0');
 	return (len);
 }
