@@ -8,42 +8,42 @@
  */
 int _printf(const char *format, ...)
 {
-    int i, num = 0;
-    int (*printf_func)(va_list);
-    va_list args;
+	int i, num = 0;
+	int (*printf_func)(va_list);
+	va_list args;
 
-    va_start(args, format);
-    for (i = 0; format && format[i] != '\0'; i++)
-    {
-        if (format[i] == '%')
-        {
-            i++;
-            switch (format[i])
-            {
-                case 'c':
-                    printf_func = &_printf_char;
-                    break;
-                case 's':
-                    printf_func = &_printf_string;
-                    break;
-                case 'd':
-                case 'i':
-                    printf_func = &_printf_number;
-                    break;
-                default:
-                    _putchar('%');
-                    _putchar(format[i]);
-                    num += 2;
-                    continue;
-            }
-            num += printf_func(args);
-        }
-        else
-        {
-            _putchar(format[i]);
-            num++;
-        }
-    }
-    va_end(args);
-    return num;
+	va_start(args, format);
+	for (i = 0; format && format[i] != '\0'; i++)
+	{
+		if (format[i] == '%')
+		{
+			i++;
+			switch (format[i])
+			{
+				case 'c':
+					printf_func = &_printf_char;
+					break;
+				case 's':
+					printf_func = &_printf_string;
+					break;
+				case 'd':
+				case 'i':
+					printf_func = &_printf_number;
+					break;
+				default:
+					_putchar('%');
+					_putchar(format[i]);
+					num += 2;
+					continue;
+			}
+			num += printf_func(args);
+		}
+		else
+		{
+			_putchar(format[i]);
+			num++;
+		}
+	}
+	va_end(args);
+	return (num);
 }

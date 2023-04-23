@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number - print a given number using _putchar
+ * _print_number - print a given number using _putchar
  * @n: number to be printed
  * Return: void
  */
@@ -20,5 +20,5 @@ int _print_number(int n)
 
 	_putchar((n % 10) + '0');
 	num++;
-    return (num);
+	return (num);
 }

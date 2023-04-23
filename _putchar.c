@@ -1,8 +1,8 @@
 #include "main.h"
 #include  <unistd.h>
 /**
- * main - print _putchar
- * is written by mbah
+ *_putchar - print _putchar
+ * @c: character
  * Return: On sucess 1
  * on error -1
  */

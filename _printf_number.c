@@ -9,6 +9,7 @@
 int _printf_number(va_list args)
 {
 	int n = va_arg(args, int);
+
 	_print_number(n);
-	return n;
+	return (n);
 }
