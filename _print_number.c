@@ -9,8 +9,6 @@ int _print_number(va_list args)
 	int n = va_arg(args, int);
 	int len = 0, div = 1;
 
-	if (n == 0)
-		_putchar('0');
 	if (n == -2147483648)
 		_puts("-2147483648");
 	if (n < 0 && n != -2147483648)
