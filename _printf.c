@@ -31,12 +31,11 @@ int _printf(const char *format, ...)
 					printf_func = &_printf_number;
 					break;
 				default:
-					_putchar('%');
 					_putchar(format[i]);
-					num+=2;
+					num+=1;
 					continue;
 			}
-			num += printf_func(args);
+		num += printf_func(args); 
 		}
 		else
 		{
