@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				case 'i':
 					printf_func = &_printf_number;
 					break;
-				default:
+				default:	
 					num+=1;
 					continue;
 			}
