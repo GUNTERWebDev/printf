@@ -32,11 +32,11 @@ int _printf(const char *format, ...)
 				case 'i':
 					printf_func = &_printf_number;
 					break;
-				default:	
-					num+=1;
+				default:
+					num++;
 					continue;
 			}
-		num += printf_func(args); 
+		num += printf_func(args);
 		}
 		else
 		{
