@@ -23,27 +23,19 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-				{
 					printf_func = &_printf_char;
 					break;
-				}
 				case 's':
-				{
 					printf_func = &_printf_string;
 					break;
-				}
 				case 'd':
 				case 'i':
-				{
 					printf_func = &_printf_number;
 					break;
-				}
 				default:
-				{
 					_putchar('%');
 					num++;
 					continue;
-				}
 			}
 		num += printf_func(args);
 		}
