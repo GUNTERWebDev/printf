@@ -9,7 +9,6 @@
 int _printf(const char *format, ...)
 {
 	int i, num = 0;
-	int (*printf_func)(va_list);
 	va_list args;
 
 	if (format == NULL)
@@ -20,29 +19,26 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			switch (format[i])
+			if (format[i] == 'c')
 			{
-				case 'c':
-					printf_func = &_printf_char;
-					break;
-				case 's':
-					printf_func = &_printf_string;
-					break;
-				case 'd':
-				case 'i':
-					printf_func = &_printf_number;
-					break;
-				default:
-					_putchar('%');
-					num++;
-					continue;
+				num += _printf_char(args);
 			}
-		num += printf_func(args);
+			else if (format[i] == 's')
+			{
+				num += _printf_string(args);
+			}
+			else if (format[i] == 'd' || format[i] == 'i')
+			{
+				num += _printf_number(args);
+			}
+			else if (format[i] == '%')
+			{
+				num += _putchar('%');
+			}
 		}
 		else
 		{
-			_putchar(format[i]);
-			num++;
+			num += _putchar(format[i]);
 		}
 	}
 	va_end(args);

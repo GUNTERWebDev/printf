@@ -3,8 +3,7 @@
 /**
  *_putchar - print _putchar
  * @c: character
- * Return: On sucess 1
- * on error -1
+ * Return: char
  */
 int _putchar(char c)
 {
