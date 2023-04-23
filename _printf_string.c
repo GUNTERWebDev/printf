@@ -1,5 +1,6 @@
-#include "main.c"
+#include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * _printf_string - Print a string
