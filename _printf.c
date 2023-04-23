@@ -38,13 +38,9 @@ int _printf(const char *format, ...)
 					printf_func = &_printf_number;
 					break;
 				}
-				case '%':
-				{
-					printf_func = &_printf_percent;
-					break;
-				}
 				default:
 				{
+					_putchar('%');
 					num++;
 					continue;
 				}
