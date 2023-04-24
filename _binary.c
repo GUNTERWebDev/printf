@@ -25,5 +25,6 @@ int _binary(va_list args)
 		j--;
 		count++;
 	}
+	bin[i] = '\0';
 	return (count);
 }
