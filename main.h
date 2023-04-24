@@ -8,4 +8,9 @@ int _putchar(char c);
 int _print_number(va_list args);
 int _printf_char(va_list args);
 int _printf_string(va_list args);
+int _all(va_list args,char format);
+int _uns(va_list args);
+int _hexa(va_list args);
+int _octal(va_list args);
+int _number(int n);
 #endif /* MAIN */
