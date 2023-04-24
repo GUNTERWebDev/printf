@@ -12,5 +12,5 @@ int _all(va_list args,char format);
 int _uns(va_list args);
 int _hexa(va_list args);
 int _octal(va_list args);
-int _number(int n);
+int _number(unsigned int n);
 #endif /* MAIN */

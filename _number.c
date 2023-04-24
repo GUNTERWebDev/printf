@@ -1,25 +1,21 @@
 #include "main.h"
 
 /**
- * print_number - print a given number using _putchar
+ * _number - print a given number using _putchar
  * @n: number to be printed
  * Return: void
  */
-int _number(int n)
+int _number(unsigned int n)
 {
 	int len = 0;
 
-	if (n == -2147483648)
+	if (n == 0)
+		len += 1;
+	if (n == 2147484671)
 	{
 		_putchar('2');
 		len += 1;
-		len += _number(147483648);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-		len =+ _number(n);
+		len += _number(147484671);
 	}
 	else if (n > 9)
 	{
