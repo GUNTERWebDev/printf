@@ -19,5 +19,9 @@ int _all(va_list args, char format)
 	{
 		num += _uns(args);
 	}
+	if (format == 'X')
+		num += _hexaup(args);
+	if (format == 'o')
+		num += _octal(args);
 	return (num);
 }

@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
- * _hexa - Converts an integer to a hexadecimal number and prints it to stdout.
+ * _octal - Converts an integer to an octal number and prints it to stdout.
  * @args: A variable argument list containing the integer to convert.
  * Return: The number of characters printed to stdout.
 **/
-int _hexa(va_list args)
+int _octal(va_list args)
 {
 	unsigned int n = va_arg(args, int);
 	char arr[20];
@@ -15,7 +16,7 @@ int _hexa(va_list args)
 	{
 		int tmp = 0;
 
-		tmp = n % 16;
+		tmp = n % 8;
 		if (tmp < 10)
 		{
 			arr[i] = tmp + '0';
@@ -23,10 +24,10 @@ int _hexa(va_list args)
 		}
 		else
 		{
-			arr[i] = tmp + 87;
+			arr[i] = tmp + 94;
 			i++;
 		}
-		n /= 16;
+		n /= 8;
 	}
 	j = i - 1;
 	while (j >= 0)

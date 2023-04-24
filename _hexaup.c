@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _hexa - Converts an integer to a hexadecimal number and prints it to stdout.
+ * _hexaup - Converts an integer to a hexadecimal number and prints it.
  * @args: A variable argument list containing the integer to convert.
  * Return: The number of characters printed to stdout.
 **/
-int _hexa(va_list args)
+int _hexaup(va_list args)
 {
 	unsigned int n = va_arg(args, int);
 	char arr[20];
@@ -17,21 +17,13 @@ int _hexa(va_list args)
 
 		tmp = n % 16;
 		if (tmp < 10)
-		{
-			arr[i] = tmp + '0';
-			i++;
-		}
+			arr[i++] = tmp + '0';
 		else
-		{
-			arr[i] = tmp + 87;
-			i++;
-		}
+			arr[i++] = tmp + 55;
 		n /= 16;
 	}
 	j = i - 1;
 	while (j >= 0)
-	{
 		_putchar(arr[j--]);
-	}
 	return (i);
 }
