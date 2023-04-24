@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			else if (format[i] == 'b')
 				num += _binary(args);
 			else if (format[i] == 'u' || format[i] == 'x' || format[i] == 'X'
-							|| format[i] == 'o')
+						|| format[i] == 'o')
 				num += _all(args, format[i]);
 			else
 			{
