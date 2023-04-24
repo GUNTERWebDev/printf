@@ -27,6 +27,8 @@ int _printf(const char *format, ...)
 				num += _print_number(args);
 			else if (format[i] == '%')
 				num += _putchar('%');
+			else if (format[i] == 'b')
+				num += _binary(args);	
 			else
 			{
 				_putchar('%');
