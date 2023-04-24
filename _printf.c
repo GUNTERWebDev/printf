@@ -19,10 +19,8 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
-			if (format[i] == 'c')
-				num += _printf_char(args);
-			else if (format[i] == 's')
-				num += _printf_string(args);
+			if (format[i] == 'c' || format[i] == 's')
+				num += _allchar(args, format[i]);
 			else if (format[i] == 'd' || format[i] == 'i')
 				num += _print_number(args);
 			else if (format[i] == '%')
