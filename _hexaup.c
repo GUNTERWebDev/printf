@@ -11,6 +11,11 @@ int _hexaup(va_list args)
 	int i = 0;
 	int j;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		i++;
+	}
 	while (n != 0)
 	{
 		int tmp = 0;
