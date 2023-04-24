@@ -15,5 +15,7 @@ int _allchar(va_list args, char format)
 		n += _printf_char(args);
 	if (format == 's')
 		n += _printf_string(args);
+	if (format == 'd' || format == 'i')
+		n += _print_number(args);
 	return (n);
 }
