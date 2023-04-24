@@ -11,6 +11,11 @@ int _binary(va_list args)
 	unsigned int n = va_arg(args, int);
 	int bin[32], i, j, count = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		count++;
+	}
 	i = 0;
 	while (n > 0)
 	{
