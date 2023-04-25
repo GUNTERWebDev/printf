@@ -12,7 +12,7 @@ int _number(unsigned int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		len += 1;
+		return (1);
 	}
 	if (n == 2147484671)
 	{
