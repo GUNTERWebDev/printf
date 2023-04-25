@@ -15,12 +15,12 @@ int _hexa(va_list args)
 	int j;
 	char swap;
 	unsigned int tmp;
-	
+
 	if (n == 0)
 	{
 		return (_putchar('0'));
 	}
-	arr = (char*) malloc(sizeof(char) * 20);
+	arr = (char *) malloc(sizeof(char) * 20);
 	if (!arr)
 		return (-1);
 	while (n != 0)
