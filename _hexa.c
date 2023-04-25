@@ -38,5 +38,10 @@ int _hexa(va_list args)
 	j = i - 1;
 	while (j >= 0)
 		_putchar(arr[j--]);
+	while (i < 1024)
+	{
+		_putchar('\0');
+		i++;
+	}
 	return (i);
 }
