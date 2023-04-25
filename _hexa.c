@@ -13,8 +13,12 @@ int _hexa(va_list args)
 	int i = 0;
 	int j;
 
-	if (arr == NULL)
-		return (i);
+	if (n == 0)
+	{
+		_putchar('0');
+		i++;
+	}
+	
 	while (n != 0)
 	{
 		int tmp = 0;
