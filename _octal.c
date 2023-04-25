@@ -11,7 +11,7 @@ int _octal(va_list args)
 	char arr[1024];
 	int i = 0;
 	int j;
-	unsigned long int tmp;
+	unsigned int tmp;
 
 	if (n == 0)
 	{
