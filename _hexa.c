@@ -29,7 +29,7 @@ int _hexa(va_list args)
 		}
 		else
 		{
-			arr[i] = tmp + 'a';
+			arr[i] = tmp + 55;
 			i++;
 		}
 		n /= 16;
