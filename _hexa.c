@@ -8,7 +8,7 @@
 **/
 int _hexa(va_list args)
 {
-	unsigned int n = va_arg(args, unsigned long int);
+	unsigned long int n = va_arg(args, unsigned long int);
 	char arr[1024];
 	int i = 0;
 	int j;
