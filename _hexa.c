@@ -9,7 +9,7 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	char *arr = malloc(sizeof(char) * (sizeof(unsigned int) * n + 1));
+	char *arr = malloc(sizeof(char) * (sizeof(unsigned long int) * n + 1));
 	int i = 0;
 	int j;
 	unsigned long int tmp;
