@@ -8,17 +8,9 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	char *arr;
-	int count = 0;
+	char arr[1024];
 	int i = 0;
 	int j;
-
-	while (n > 0)
-	{
-		arr++;
-		n /= 16;
-	}
-	arr = malloc(sizeof(char) * count);
 
 	while (n != 0)
 	{
