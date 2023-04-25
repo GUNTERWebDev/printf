@@ -8,7 +8,7 @@
  */
 int _uns(va_list args)
 {
-	unsigned long int n = va_arg(args, int);
+	unsigned int n = va_arg(args, int);
 
 	return (_number(n));
 }
