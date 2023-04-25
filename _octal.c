@@ -8,7 +8,7 @@
 int _octal(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	static char arr[1024];
+	char arr[1024];
 	int i = 0;
 	int j;
 
@@ -34,5 +34,5 @@ int _octal(va_list args)
 	{
 		_putchar(arr[j--]);
 	}
-	return (i);
+	return (j);
 }
