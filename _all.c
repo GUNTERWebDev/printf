@@ -5,7 +5,7 @@
  * @args: The arguments list for the format specifier
  * @format: The format specifier character to handle
  *
- * Return: The number of characters printed
+ * Return: The count of characters printed
  */
 int _all(va_list args, char format)
 {

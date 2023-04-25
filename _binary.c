@@ -3,7 +3,7 @@
 /**
  * _binary - function that converts decimal to binary
  * @args: a va_list of arguments friom printf
- * Return: The number of characters printed
+ * Return: The count of characters printed
 **/
 
 int _binary(va_list args)
