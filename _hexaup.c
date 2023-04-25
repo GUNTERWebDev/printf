@@ -11,6 +11,7 @@ int _hexaup(va_list args)
 	char arr[1024];
 	int i = 0;
 	int j;
+	unsigned int tmp;
 
 	if (n == 0)
 	{
@@ -18,8 +19,7 @@ int _hexaup(va_list args)
 	}
 	while (n > 0)
 	{
-		long int tmp = 0;
-
+		tmp = 0;
 		tmp = n % 16;
 		if (tmp < 10)
 			arr[i++] = tmp + '0';

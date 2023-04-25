@@ -12,7 +12,7 @@ int _hexa(va_list args)
 	char arr[1024];
 	int i = 0;
 	int j;
-	long int tmp;
+	unsigned int tmp;
 
 	if (n == 0)
 	{
