@@ -16,7 +16,7 @@ int _hexaup(va_list args)
 		_putchar('0');
 		i++;
 	}
-	while (n != 0)
+	while (n > 0)
 	{
 		int tmp = 0;
 
