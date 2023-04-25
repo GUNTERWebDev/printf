@@ -6,13 +6,10 @@
 **/
 int _hexaup(va_list args)
 {
-	long int n = va_arg(args, long int);
-	char arr[200];
+	unsigned int n = va_arg(args, unsigned int);
+	char arr[1024];
 	int i = 0;
 	int j;
-
-        if (n < 0)
-		n *= -1;
 
 	while (n > 0)
 	{
