@@ -9,11 +9,13 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	char arr[1024];
+	char *arr = malloc(sizeof(char) * (sizeof(unsigned int) * n + 1));
 	int i = 0;
 	int j;
 	unsigned long int tmp;
-
+	
+	if (arr == NULL)
+		return (0);
 	if (n == 0)
 	{
 		return (_putchar('0'));
@@ -37,5 +39,6 @@ int _hexa(va_list args)
 	j = i - 1;
 	while (j >= 0)
 		_putchar(arr[j--]);
+	free(arr);
 	return (i);
 }
