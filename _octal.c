@@ -8,7 +8,7 @@
 int _octal(va_list args)
 {
 	unsigned int n = va_arg(args, int);
-	char arr[50];
+	char arr[100];
 	int i = 0;
 	int j;
 
