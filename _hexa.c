@@ -7,7 +7,7 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, int);
-	char arr[20];
+	char arr[32];
 	int i = 0;
 	int j;
 
