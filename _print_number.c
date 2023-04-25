@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_number - print a given number using _putchar
+ * _print_number - print a given numbe
  * @args: argument
  * Return: len
  */

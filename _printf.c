@@ -2,7 +2,7 @@
 #include "main.h"
 #include <stdarg.h>
 /**
- * _printf - Write a function that produces output according to a format.
+ * _printf - Write a function that gives output according to a format.
  * @format: a string containing zero or more format specifiers
  * Return: the number of characters printed
  */

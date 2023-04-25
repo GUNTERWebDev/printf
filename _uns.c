@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _uns - Prints an unsigned integer
+ * _uns - Print an unsigned integer
  *
  * @args: The argument list for the unsigned integer
  *

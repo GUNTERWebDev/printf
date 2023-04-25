@@ -2,7 +2,7 @@
 
 /**
  * _binary - function that converts decimal to binary
- * @args: A va_list of arguments from printf
+ * @args: a va_list of arguments friom printf
  * Return: The number of characters printed
 **/
 

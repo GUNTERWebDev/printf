@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _octal - Converts an integer to an octal number and prints it to stdout.
+ * _octal - Converts an integer to an octal number.
  * @args: A variable argument list containing the integer to convert.
  * Return: The number of characters printed to stdout.
 **/
@@ -15,7 +15,7 @@ int _octal(va_list args)
 	if (n == 0)
 	{
 		return (_putchar('0'));
-        }
+	}
 	while (n > 0)
 	{
 		int tmp = 0;

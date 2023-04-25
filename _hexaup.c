@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _hexaup - Converts an integer to a hexadecimal number and prints it.
+ * _hexaup - Converts an integer to a hexadecimal characters are in uppercase.
  * @args: A variable argument list containing the integer to convert.
  * Return: The number of characters printed to stdout.
 **/

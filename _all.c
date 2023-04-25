@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _all - Calls the appropriate function to handle a format specifier
+ * _all - Calls the functions
  *
  * @args: The arguments list for the format specifier
  * @format: The format specifier character to handle

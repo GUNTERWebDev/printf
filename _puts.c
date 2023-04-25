@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - print every other character starting from first one
+ * _puts - print string
  * @str: string passed
  * Return: void
  */

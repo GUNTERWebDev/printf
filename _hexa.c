@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * _hexa - Converts an integer to a hexadecimal number and prints it to stdout.
+ * _hexa - Converts an integer to a hexadecimal number.
  * @args: A variable argument list containing the integer to convert.
  * Return: The number of characters printed to stdout.
 **/
