@@ -7,7 +7,7 @@
 **/
 int _hexaup(va_list args)
 {
-	unsigned long int n = va_arg(args, unsigned long int);
+	unsigned int n = va_arg(args, unsigned int);
 	char arr[1024];
 	int i = 0;
 	int j;
