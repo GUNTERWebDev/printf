@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _octal - Converts an integer to an octal number and prints it to stdout.
  * @args: A variable argument list containing the integer to convert.

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdlib.h>
 /**
  * _hexa - Converts an integer to a hexadecimal number and prints it to stdout.

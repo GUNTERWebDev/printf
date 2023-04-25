@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _hexaup - Converts an integer to a hexadecimal number and prints it.
  * @args: A variable argument list containing the integer to convert.
