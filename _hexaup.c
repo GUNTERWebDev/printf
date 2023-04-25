@@ -11,7 +11,7 @@ int _hexaup(va_list args)
 	char arr[1024];
 	int i = 0;
 	int j;
-	unsigned int tmp;
+	unsigned long int tmp;
 
 	if (n == 0)
 	{
