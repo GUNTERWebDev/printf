@@ -14,7 +14,7 @@ int _octal(va_list args)
 
 	if (n == 0)
 	{
-		_putchar('0');
+		arr[i] = n + '0';
 		i++;
         }
 

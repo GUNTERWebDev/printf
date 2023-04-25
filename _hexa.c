@@ -15,10 +15,9 @@ int _hexa(va_list args)
 
 	if (n == 0)
 	{
-		_putchar('0');
+		arr[i] = n + '0';
 		i++;
 	}
-	
 	while (n != 0)
 	{
 		int tmp = 0;
