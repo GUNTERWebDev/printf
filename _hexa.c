@@ -25,13 +25,12 @@ int _hexa(va_list args)
 		if (tmp < 10)
 		{
 			arr[i] = tmp + '0';
-			i++;
 		}
 		else
 		{
 			arr[i] = tmp + 87;
-			i++;
 		}
+		i++;
 		n /= 16;
 	}
 	j = i - 1;
