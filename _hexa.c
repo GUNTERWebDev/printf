@@ -7,7 +7,7 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, int);
-	char arr[100];
+	char arr[200];
 	int i = 0;
 	int j;
 
@@ -16,7 +16,7 @@ int _hexa(va_list args)
 		_putchar('0');
 		i++;
 	}
-	while (n > 0)
+	while (n != 0)
 	{
 		int tmp = 0;
 
@@ -35,8 +35,6 @@ int _hexa(va_list args)
 	}
 	j = i - 1;
 	while (j >= 0)
-	{
 		_putchar(arr[j--]);
-	}
 	return (i);
 }
