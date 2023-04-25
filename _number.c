@@ -10,6 +10,8 @@ int _number(unsigned int n)
 	int len = 0;
 
 	if (n == 0)
+	{
+		_putchar('0');
 		len += 1;
 	if (n == 2147484671)
 	{
