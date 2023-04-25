@@ -18,7 +18,7 @@ int _hexaup(va_list args)
 	}
 	while (n > 0)
 	{
-		int tmp = 0;
+		long int tmp = 0;
 
 		tmp = n % 16;
 		if (tmp < 10)
