@@ -34,5 +34,5 @@ int _octal(va_list args)
 	{
 		_putchar(arr[j--]);
 	}
-	return (j);
+	return (i);
 }

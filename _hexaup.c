@@ -25,5 +25,5 @@ int _hexaup(va_list args)
 	j = i - 1;
 	while (j >= 0)
 		_putchar(arr[j--]);
-	return (j);
+	return (i);
 }
