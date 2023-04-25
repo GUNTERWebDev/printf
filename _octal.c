@@ -12,6 +12,8 @@ int _octal(va_list args)
 	int i = 0;
 	int j;
 
+	if (n < 0)
+		n *= -1;
 	while (n > 0)
 	{
 		int tmp = 0;
