@@ -14,10 +14,8 @@ int _octal(va_list args)
 
 	if (n == 0)
 	{
-		arr[i] = n + '0';
-		i++;
+		return (_putchar('0'));
         }
-	arr[1024] = '\0';
 	while (n > 0)
 	{
 		int tmp = 0;
