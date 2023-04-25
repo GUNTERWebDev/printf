@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _hexa - Converts an integer to a hexadecimal number and prints it to stdout.
  * @args: A variable argument list containing the integer to convert.
@@ -7,9 +8,17 @@
 int _hexa(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	static char arr[1024];
+	char *arr;
+	int count = 0;
 	int i = 0;
 	int j;
+
+	while (n > 0)
+	{
+		arr++;
+		n /= 16;
+	}
+	arr = malloc(sizeof(char) * count);
 
 	while (n != 0)
 	{
