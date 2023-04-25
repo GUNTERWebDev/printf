@@ -24,7 +24,7 @@ int _hexaup(va_list args)
 		if (tmp < 10)
 			arr[i++] = tmp + '0';
 		else
-			arr[i++] = tmp + 87;
+			arr[i++] = tmp + 55;
 		n /= 16;
 	}
 	j = i - 1;
